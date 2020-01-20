@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid red; */
+}
+
+body {
+    background-color: #849d8f;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+/* img {
+    max-width: 100%;
+    height: auto; 
+} */
+
+.visually-hidden {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.underline-links {
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+
+header a:hover,
+header a:focus,
+header a:active {
+    color: #ffbc9e;
+}
+
+/* header a:visited{
+    /color: white;
+} */
+
+.site-navigation {
+    font-weight: bold;
+
+}
+
+.user-navigation {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.site-navigation,
+.user-navigation,
+.catalog,
+.newItems,
+.catalogList,
+.catalog-ice-cream,
+.socialButtonList,
+.aboutCompanyListOne,
+.aboutCompanyListTwo {
+    list-style: none;
+    display: flex;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+.logo-in-header {
+    margin: 8px 9px 0 27px;
+}
+
+
+/* КАТАЛОГ */
+.catalogInNav {
+    position: relative;
+}
+
+.site-navigation a {
+    margin: 70px 13px 7px 15px;
+
+
+}
+
+.site-navigation .link-site-navigation:hover {
+    margin: 0;
+    padding: 7px 13px 7px 15px;
+    background: white;
+    color: black;
+    border-radius: 16px;
+}
+
+.site-navigation .link-site-navigation:active {
+    margin: 0;
+    padding: 7px 13px 7px 15px;
+    background: white;
+    color: black;
+    box-shadow: inset 1px 2px 1px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+}
+
+
+.catalogList {
+    display: none;
+    position: absolute;
+    left: 0px;
+    text-align: left;
+
+}
+
+
+.catalogInNav:hover .catalogList {
+    display: block;
+    position: absolute;
+    left: 0px;
+    text-align: left;
+    top: 32px;
+
+
+}
+
+.catalogList a {
+    display: flex;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    background: white;
+    padding: 8px;
+    padding-left: 15px;
+    margin: 0;
+    width: 143px;
+    box-sizing: border-box;
+}
+
+/* скругления выпадающего списка */
+.catalog-new-item {
+    border-radius: 5px 5px 0 0;
+}
+
+.catalog-melorin-item {
+    border-radius: 0 0 5px 5px;
+}
+
+.catalog-list-see .catalog-new-item {
+    font-weight: 700;
+    position: relative;
+}
+
+/* Подчёркивание в Новинках (выпадающий список) */
+.catalog-list-see .catalog-new-item::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 128px;
+    background: #d1d0ce;
+    left: 7px;
+    bottom: 0;
+}
+
+/* Визуализация ссылок в раскрывающемся списке */
+.catalog-list-see a:hover,
+.catalog-list-see a:active,
+.catalog-list-see a:focus {
+    background: #fbded7;
+    color: black
+}
+
+
+
+
+.main-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+
+.site-navigation {
+    margin-top: 30px;
+}
+
+
+.all-navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.user-navigation {
+    margin: 23px 27px 16px 0;
+}
+
+
+header {
+    text-align: right;
+}
+
+.header-work-time {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 27px;
+    margin-bottom: 4px;
+}
+
+.header-work-phone {
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 27px;
+}
+
+/* ПОИСК */
+.site-navigation-search a {
+    padding: 0px 16.5px 16.5px 16.5px;
+    background: #9db1a5;
+    border-radius: 16.5px;
+}
+
+.site-navigation-search a {
+    position: relative;
+}
+
+.site-navigation-search a::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/header/Searchpng.png);
+    background-repeat: no-repeat;
+    top: 8px;
+    left: 8px;
+    width: 17px;
+    height: 17px;
+
+}
+
+
+
+
+/* ВХОД */
+.site-navigation-input a {
+    padding: 8px 17px 8px 45px;
+    background: #9db1a5;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 16.5px;
+}
+
+.inputLink {
+    position: relative;
+}
+
+.inputLink::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/header/entrance.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    left: 18px;
+    top: 6px;
+    width: 21px;
+    height: 19px;
+}
+
+
+
+
+
+/* КОРЗИНА */
+.site-navigation-basket,
+.site-navigation-input {
+    margin-top: 9px;
+}
+
+.site-navigation-basket a {
+
+    padding: 8px 34px 8px 45px;
+    background: #9db1a5;
+    border-radius: 16.5px;
+}
+
+.site-navigation-basket a {
+    position: relative;
+}
+
+.site-navigation-basket a::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/header/basket.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    left: 16px;
+    top: 6px;
+    width: 21px;
+    height: 20px;
+
+}
+
+
+.container-for-scroll {
+    width: 1200px;
+    margin: 0 auto;
+    background-image: url("../img/header/iceCream1.png"), url("../img/header/iceCream2.png"), url("../img/header/light.png");
+    background-repeat: no-repeat;
+    background-position: top 83px left 277px, top 126px right 276px, top center;
+}
+
+
+/* КНОПКА ПО ЦЕНТРУ */
+.text-cream-and-jem {
+    font-size: 60px;
+    font-weight: 700;
+    display: block;
+    margin-top: 274px;
+    line-height: 60.35px;
+    margin-bottom: 43px;
+}
+
+.main-button {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 13px 42px 13px 41px;
+    background: linear-gradient(to top, #e74a35, #f26843);
+    border-radius: 32px;
+    text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76), 0 0 5px rgba(61, 61, 46, 0.34);
+    box-shadow: 0px 2px 2px rgba(172, 16, 0, .64);
+}
+
+.menu-slide {
+    text-align: center;
+}
+
+.scroll-menu {
+    position: relative;
+}
+
+.bottoms-for-scroll {
+    position: absolute;
+    left: 27px;
+    top: 165px;
+}
+
+.scroll-menu button {
+    width: 21px;
+    height: 21px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+
+}
+
+.scroll-menu .button-for-slide1 {
+    background: white;
+}
+
+.button-for-slide2 {
+    margin: 0 6px 0 6px;
+}
+
+
+
+/* КОНТЕНТ ПОСЛЕ КНОПКИ И СЛАЙДЕРА */
+
+.main-store-promotions {
+    margin: 0 27px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+    font-weight: 700;
+}
+
+.main-promotions-one {
+    background-image: url(../img/main/action/maline.png);
+    background-repeat: no-repeat;
+    min-height: 229px;
+    width: 560px;
+}
+
+.main-promotions-two {
+    background-image: url(../img/main/action/chocolate.png);
+    background-repeat: no-repeat;
+    min-height: 229px;
+    width: 560px;
+}
+
+.main-store-promotions {
+    text-align: right;
+}
+
+.main-store-promotions h3 {
+    margin-top: 18px;
+    margin-left: 20px;
+    font-size: 35px;
+    text-align: left;
+}
+
+.main-store-promotions p {
+    margin-top: 17px;
+    margin-left: 20px;
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 57px;
+}
+
+.main-store-promotions a {
+    margin-right: 23px;
+    padding: 13px 22px;
+    font-size: 18px;
+    background: linear-gradient(to top, #e74a35, #f26843);
+    border-radius: 32px;
+    box-shadow: 0px 2px 2px rgba(172, 16, 0, .64);
+}
+
+/* Список-примеры мороженного */
+.main-ice-cream-galery {
+    margin-top: 40px;
+}
+
+.catalog-ice-cream {
+    display: flex;
+    margin: 0 27px;
+    justify-content: space-between;
+}
+
+.main-catalog-item2 {
+    margin-left: 26px;
+    margin-right: 13px;
+}
+
+.main-catalog-item3 {
+    margin-left: 13px;
+    margin-right: 26px;
+}
+
+
+.catalog-ice-cream li {
+    position: relative;
+    text-align: center;
+    font-weight: 500;
+}
+
+.main-catalog-image-hit {
+    position: absolute;
+}
+
+.main-cost-ice-cream {
+    position: absolute;
+    top: 209px;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.main-cost-ice-cream span {
+    font-size: 30px;
+}
+
+.main-about-ice-cream {
+    padding-top: 11px;
+    line-height: 22px;
+}
+
+.catalog-ice-cream li:hover {
+    background: #9db1a5;
+    border-radius: 5px;
+}
+
+/* Описание магазина в вафле */
+
+.main-about-shop {
+    min-height: 306px;
+    background-image: url(../img/main/aboutShop/fonAboutShop.jpg);
+    color: #323232;
+    border-radius: 13px;
+    margin: 36px 27px 0 27px;
+}
+
+.main-about-shop h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 21px;
+    padding-top: 27px;
+    padding-bottom: 9px;
+    line-height: 30px;
+}
+
+.main-about-shop-facts {
+    display: flex;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.main-about-shop-facts-make {
+    background-image: url(../img/main/aboutShop/ice-cream.svg);
+    background-repeat: no-repeat;
+    padding: 14px 0 0 57px;
+}
+
+.main-about-shop-facts-components {
+    background-image: url(../img/main/aboutShop/eco.svg);
+    background-repeat: no-repeat;
+    padding: 12px 0 0 57px;
+    margin-top: 6px;
+}
+
+.main-about-shop-facts-cooperation {
+    background-image: url(../img/main/aboutShop/cow.svg);
+    background-repeat: no-repeat;
+    padding: 12px 0 0 57px;
+}
+
+.main-about-shop-facts-logistics {
+    background-image: url(../img/main/aboutShop/thermometer.svg);
+    background-repeat: no-repeat;
+    padding: 16px 0 0 55px;
+    margin-top: 8px;
+}
+
+.main-about-shop-facts .first-column {
+    margin-left: 20px;
+    width: 50%;
+    margin-right: 26px;
+}
+
+.main-about-shop-facts .second-column {
+    margin-right: 20px;
+    width: 50%;
+    margin-right: 26px;
+}
+
+
+
+
+main .news-and-feedback {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top:40px;
+
+
+}
+
+.news-in-blog {
+    margin-left: 27px;
+    min-height: 220px;
+    background-image: url("../img/main/article/fonStrawberry.jpg");
+    border-radius: 22px;
+    margin-right: 26px;
+    width: 560px;
+}
+
+.feedback {
+    width: 560px;
+    margin-right: 27px;
+
+    background-color: #f8f7f4;
+    border: 4px solid transparent;
+    border-image-source: url("../img/main/article/bg-post.svg");
+    border-image-slice: 5;
+    border-radius: 15px;
+    border-image-repeat: round;
+    /* border-radius не влияет на border-image поэтому скругления не очень вышли,
+    я не хотел делать 2 фона. Хотелось попробовать поиграть с border-image */
+}
