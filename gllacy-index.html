@@ -13,8 +13,8 @@
 </head>
 
 <body>
-    <div class="container-for-scroll">
-        <header class="main-header container">
+    <div class="scroll-bar container">
+        <header class="main-header">
             <h1 class="visually-hidden">Сайт мороженого</h1>
             <nav class="main-navigation" aria-label="Навигация по сайту">
                 <img class="logo-in-header logo-header" src="img/header/logo.svg" alt="Логотип Gllacy Shop">
@@ -49,7 +49,7 @@
 
         </header>
 
-        <main class="container">
+        <main>
             <div>
                 <section class="scroll-menu">
                     <div class="menu-slide">
@@ -85,8 +85,7 @@
                 </div>
 
             </div>
-            <!-- блоки с МАЛИНКА ДАРОМ и ШОКОЛАД ДАРОМ КОНЕЦ-->
-            <!-- Список с мороженным НАЧАЛО-->
+
             <section class="main-ice-cream-galery">
                 <h2 class="visually-hidden">Хиты сезона</h2>
                 <ol class="catalog-ice-cream">
@@ -94,7 +93,7 @@
                             <img class="main-catalog-image-hit" src="img/main/ice-cream/hit.svg" alt="Хит СЕЗОНА!">
                             <img src="img/main/ice-cream/ice-cream_orange.png"
                                 alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-                            <!--img ХИТ сделать бэкграундом над картинкой или в коде под?-->
+                            
                             <p class="main-cost-ice-cream">310&#8381;<span> /кг</span></p>
                             <p class="main-about-ice-cream">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
                         </a>
@@ -125,9 +124,7 @@
                     </li>
                 </ol>
             </section>
-            <!-- Список с мороженным КОНЕЦ-->
 
-            <!--ОПИСАНИЕ МАГАЗИНА НАЧАЛО-->
             <section class="main-about-shop">
                 <h2 class="visually-hidden">О нашем магазине</h2>
 
@@ -136,34 +133,37 @@
                 </h3>
                 <div class="main-about-shop-facts">
                     <div class="first-column">
-                        <p class="main-about-shop-facts-make">Все наше мороженое изготавливается на собственном производстве, с использованием современного
+                        <p class="main-about-shop-facts-make">Все наше мороженое изготавливается на собственном
+                            производстве, с использованием современного
                             оборудования и проверенных временем технологий.</p>
-                        <p class="main-about-shop-facts-components">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все
+                        <p class="main-about-shop-facts-components">Для приготовления мороженого используются настоящие
+                            сливки и молоко высочайшего качества. Все
                             дополнительные ингредиенты и добавки произведены из натурального, экологически чистого
                             сырья.
                         </p>
                     </div>
                     <div class="second-column">
-                        <p class="main-about-shop-facts-cooperation">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с
+                        <p class="main-about-shop-facts-cooperation">Закупка ингредиентов производится только у
+                            проверенных фермерских хозяйств и компаний, с
                             которыми нас связывает долговременное сотрудничество.</p>
-                        <p class="main-about-shop-facts-logistics">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не
+                        <p class="main-about-shop-facts-logistics">Доставка нашего мороженого до заказчиков
+                            осуществляется в специальном термопаке, который не
                             дает
                             мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
                     </div>
                 </div>
 
             </section>
-            <!--ОПИСАНИЕ МАГАЗИНА КОНЕЦ-->
 
-            <!--Два последних БЛОКА> НАЧАЛО-->
             <div class="news-and-feedback">
                 <article class="news-in-blog">
                     <h3>Новое в нашем блоге</h3>
-                    <a href="#">
-                        <h3>10 способов сервировки
+                    <div><a href="#">
+                            10 способов сервировки
                             фруктовых щербетов к
-                            столу</h3>
-                    </a>
+                            столу
+                        </a>
+                    </div>
                 </article>
                 <section class="feedback">
                     <h2 class="visually-hidden">Подпишитесь на рассылку</h2>
@@ -175,18 +175,18 @@
                                 происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</label><br>
                             <input type="email" name="email" placeholder="Электронная почта" id="email-field">
                             <input type="submit" value="Отправить">
-                            <!--или сделать через botton?-->
                         </form>
                     </div>
                 </section>
             </div>
-            <!--Два последних БЛОКА КОНЕЦ-->
 
-            <!--GOOGLE map-->
-            <section class="contacts">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1579565007772!5m2!1sru!2sby" width="100%" height="430" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </main>
 
-                <h2>Наши контакты</h2>
+
+        <div class="contacts">
+
+            <div class="contacts-and-time-work">
+                <h2 class="visually-hidden">Наши контакты</h2>
                 <p>
                     Адрес главного офиса <br>
                     и офлайн-магазина:<br>
@@ -198,12 +198,19 @@
                     <a href="#">Форма обратной связи</a>
 
                 </p>
-            </section>
-            <!--GOOGLE map-->
-        </main>
+            </div>
+        </div>
     </div>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1579565007772!5m2!1sru!2sby"
+        width="100%" height="430" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <section class="contacts container">
+    </section>
 
-    
+
+
+
+
     <footer class="container main-footer">
         <ul class="socialButtonList">
             <li> <a class="social-button" href="#">Твиттер</a></li>
@@ -232,8 +239,6 @@
         </p>
         <p>Сделано в <a href="#">HTML Academy</a>&#169; 2017</p>
 
-
-        <!-- MODALKIIIIIIIIIIIII -->
 
 
 

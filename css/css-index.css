@@ -303,9 +303,8 @@ header {
 }
 
 
-.container-for-scroll {
-    width: 1200px;
-    margin: 0 auto;
+.scroll-bar {
+
     background-image: url("../img/header/iceCream1.png"), url("../img/header/iceCream2.png"), url("../img/header/light.png");
     background-repeat: no-repeat;
     background-position: top 83px left 277px, top 126px right 276px, top center;
@@ -540,9 +539,7 @@ main .news-and-feedback {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top:40px;
-
-
+    margin-top: 40px;
 }
 
 .news-in-blog {
@@ -552,18 +549,64 @@ main .news-and-feedback {
     border-radius: 22px;
     margin-right: 26px;
     width: 560px;
+    color: black;
+    margin-bottom: 40px;
 }
 
+.news-in-blog h3 {
+    font-weight: 500;
+    line-height: 22px;
+    font-size: 16px;
+    margin-top: 25px;
+    margin-left: 19px;
+}
+
+
+.news-in-blog div {
+    color: black;
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 24px;
+    margin-left: 19px;
+    margin-top: 8px;
+    width: 285px;
+}
+.news-in-blog div a {
+    color: black;
+    text-decoration: underline;
+
+}
 .feedback {
     width: 560px;
     margin-right: 27px;
-
+    height: 210px;
     background-color: #f8f7f4;
-    border: 4px solid transparent;
+    border: 5px solid transparent;
     border-image-source: url("../img/main/article/bg-post.svg");
     border-image-slice: 5;
     border-radius: 15px;
     border-image-repeat: round;
+    color: #5a5a5a;
     /* border-radius не влияет на border-image поэтому скругления не очень вышли,
     я не хотел делать 2 фона. Хотелось попробовать поиграть с border-image */
+}
+
+
+.contacts {
+    position: relative;
+}
+
+.contacts-and-time-work {
+    box-sizing: border-box;
+    position: absolute;
+    background: #fff;
+    opacity: 98%;
+    border-radius: 13px;
+    color: black;
+    min-height: 305px;
+    width: 302px;
+    right: 27px;
+    top: 62px;
+    padding-left: 25px;
+    padding-top: 31px;
 }
