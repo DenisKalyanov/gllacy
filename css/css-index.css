@@ -38,7 +38,7 @@ header a:hover,
 header a:focus,
 header a:active {
     color: #ffbc9e;
-}
+} 
 
 /* header a:visited{
     /color: white;
@@ -164,13 +164,15 @@ header a:active {
 
 /* Визуализация ссылок в раскрывающемся списке */
 .catalog-list-see a:hover,
-.catalog-list-see a:active,
 .catalog-list-see a:focus {
     background: #fbded7;
     color: black
 }
 
-
+.catalog-list-see a:active{
+    background: #f6b5a5;
+    color: black
+}
 
 
 .main-navigation {
@@ -180,12 +182,9 @@ header a:active {
 
 }
 
-
-
 .site-navigation {
     margin-top: 30px;
 }
-
 
 .all-navigation {
     display: flex;
@@ -196,7 +195,6 @@ header a:active {
 .user-navigation {
     margin: 23px 27px 16px 0;
 }
-
 
 header {
     text-align: right;
@@ -241,9 +239,7 @@ header {
     left: 8px;
     width: 17px;
     height: 17px;
-
 }
-
 
 
 
@@ -256,6 +252,15 @@ header {
     border-radius: 16.5px;
 }
 
+.site-navigation-input a:hover {
+    padding: 8px 17px 8px 45px;
+    background: white;
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 16.5px;
+}
+
 .inputLink {
     position: relative;
 }
@@ -263,7 +268,19 @@ header {
 .inputLink::before {
     content: "";
     position: absolute;
-    background-image: url(../img/header/entrance.svg);
+    background-image: url(../img/header/entrance-white.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    left: 18px;
+    top: 6px;
+    width: 21px;
+    height: 19px;
+}
+
+.inputLink:hover::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/header/entrance-black.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
     left: 18px;
@@ -276,6 +293,7 @@ header {
 
 
 
+
 /* КОРЗИНА */
 .site-navigation-basket,
 .site-navigation-input {
@@ -283,29 +301,45 @@ header {
 }
 
 .site-navigation-basket a {
-
+    position: relative;
     padding: 8px 34px 8px 45px;
     background: #9db1a5;
     border-radius: 16.5px;
 }
 
-.site-navigation-basket a {
+.site-navigation-basket a:hover {
     position: relative;
+    padding: 8px 34px 8px 45px;
+    background: white;
+    color: black;
+    border-radius: 16.5px;
 }
+
+
 
 .site-navigation-basket a::before {
     content: "";
     position: absolute;
-    background-image: url("../img/header/basket.svg");
+    background-image: url("../img/header/basket-white.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     left: 16px;
     top: 6px;
     width: 21px;
     height: 20px;
-
 }
 
+.site-navigation-basket a:hover::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/header/basket-black.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    left: 16px;
+    top: 6px;
+    width: 21px;
+    height: 20px;
+}
 
 .scroll-bar {
 
@@ -313,7 +347,6 @@ header {
     background-repeat: no-repeat;
     background-position: top 83px left 277px, top 126px right 276px, top center;
 }
-
 
 /* КНОПКА ПО ЦЕНТРУ */
 .text-cream-and-jem {
@@ -730,7 +763,3 @@ font-weight: 400;
 margin-top: 58px;
 margin-left: 231px;
 }
-
-.made-a-company a{
-
-    }
