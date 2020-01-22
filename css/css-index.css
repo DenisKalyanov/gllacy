@@ -229,7 +229,10 @@ header {
 .site-navigation-search a {
     position: relative;
 }
-
+.site-navigation-search a:hover {
+    background-color: white;
+    position: relative;
+}
 .site-navigation-search a::before {
     content: "";
     position: absolute;
