@@ -233,7 +233,19 @@ header {
 .site-navigation-search a::before {
     content: "";
     position: absolute;
-    background-image: url(../img/header/Searchpng.png);
+    background-image: url(../img/header/loupe-white.svg);
+    background-repeat: no-repeat;
+    top: 8px;
+    left: 8px;
+    width: 17px;
+    height: 17px;
+}
+
+.site-navigation-search a:hover::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/header/loupe-black.svg);
+    background-color: white;
     background-repeat: no-repeat;
     top: 8px;
     left: 8px;
