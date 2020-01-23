@@ -34,9 +34,7 @@ a {
     border-bottom: 1px solid rgba(255, 255, 255, .5);
 }
 
-.pink-link-color:hover,
-.pink-link-color:focus,
-.pink-link-color:active {
+.pink-link-color:hover{
     color: #ffbc9e;
     border-bottom: 1px solid rgba(255, 188, 158);
 } 
@@ -465,6 +463,7 @@ header {
 .main-store-promotions p {
     margin-top: 17px;
     margin-left: 20px;
+    margin-right: 20px;
     font-size: 18px;
     text-align: left;
     margin-bottom: 57px;
@@ -561,14 +560,14 @@ header {
 
 .main-about-shop-facts {
     display: flex;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 22px;
 }
 
 .main-about-shop-facts-make {
     background-image: url(../img/main/aboutShop/ice-cream.svg);
     background-repeat: no-repeat;
-    padding: 14px 0 0 57px;
+    padding: 12px 0 0 57px;
 }
 
 .main-about-shop-facts-components {
@@ -587,7 +586,7 @@ header {
 .main-about-shop-facts-logistics {
     background-image: url(../img/main/aboutShop/thermometer.svg);
     background-repeat: no-repeat;
-    padding: 16px 0 0 55px;
+    padding: 11px 0 0 57px;
     margin-top: 8px;
 }
 
@@ -680,7 +679,7 @@ main .news-and-feedback {
     right: 27px;
     top: 62px;
     padding-left: 25px;
-    padding-top: 31px;
+    padding-top: 28px;
 }
 
 .about-email-field {
@@ -792,4 +791,25 @@ line-height: 18px;
 font-weight: 400;
 margin-top: 58px;
 margin-left: 231px;
+}
+
+.contacts-and-time-work p{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.contacts-and-time-work p span{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.contact-street{
+    display: inline-block;
+    margin-top: 1px;
+}
+
+.contact-phone{
+    display: inline-block;
+    margin-top: 5px;
 }
