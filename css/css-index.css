@@ -34,10 +34,11 @@ a {
     border-bottom: 1px solid rgba(255, 255, 255, .5);
 }
 
-header a:hover,
-header a:focus,
-header a:active {
+.pink-link-color:hover,
+.pink-link-color:focus,
+.pink-link-color:active {
     color: #ffbc9e;
+    border-bottom: 1px solid rgba(255, 188, 158);
 } 
 
 /* header a:visited{
