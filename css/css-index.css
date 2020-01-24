@@ -34,14 +34,11 @@ a {
     border-bottom: 1px solid rgba(255, 255, 255, .5);
 }
 
-.pink-link-color:hover{
+.pink-link-color:hover,
+.pink-link-color:active {
     color: #ffbc9e;
     border-bottom: 1px solid rgba(255, 188, 158);
 } 
-
-/* header a:visited{
-    /color: white;
-} */
 
 .site-navigation {
     font-weight: bold;
@@ -162,8 +159,7 @@ a {
 }
 
 /* Визуализация ссылок в раскрывающемся списке */
-.catalog-list-see a:hover,
-.catalog-list-see a:focus {
+.catalog-list-see a:hover {
     background: #fbded7;
     color: black
 }
