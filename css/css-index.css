@@ -15,11 +15,6 @@ body {
     color: white;
 }
 
-/* img {
-    max-width: 100%;
-    height: auto; 
-} */
-
 .visually-hidden {
     display: none;
 }
@@ -29,20 +24,18 @@ a {
     color: white;
 }
 
-
-.underline-links {
-    border-bottom: 1px solid rgba(255, 255, 255, .5);
+.pink-link-color {
+    border-bottom: 1px solid white;
 }
 
 .pink-link-color:hover,
 .pink-link-color:active {
     color: #ffbc9e;
     border-bottom: 1px solid rgba(255, 188, 158);
-} 
+}
 
 .site-navigation {
     font-weight: bold;
-
 }
 
 .user-navigation {
@@ -53,8 +46,7 @@ a {
 .site-navigation,
 .user-navigation,
 .catalog,
-.newItems,
-.catalogList,
+.catalog-list,
 .catalog-ice-cream,
 .social-button-list {
     list-style: none;
@@ -66,21 +58,21 @@ a {
     margin: 0 auto;
 }
 
-
 .logo-in-header {
     margin: 8px 9px 0 27px;
 }
 
-
 /* КАТАЛОГ */
-.catalogInNav {
+.catalog-in-nav {
     position: relative;
 }
 
 .site-navigation a {
     margin: 70px 13px 7px 15px;
+}
 
-
+.link-site-navigation {
+    border-bottom: 1px solid white;
 }
 
 .site-navigation .link-site-navigation:hover {
@@ -101,26 +93,23 @@ a {
 }
 
 
-.catalogList {
+.catalog-list {
     display: none;
     position: absolute;
     left: 0px;
     text-align: left;
-
 }
 
 
-.catalogInNav:hover .catalogList {
+.catalog-in-nav:hover .catalog-list {
     display: block;
     position: absolute;
     left: 0px;
     text-align: left;
     top: 32px;
-
-
 }
 
-.catalogList a {
+.catalog-list a {
     display: flex;
     color: black;
     font-size: 14px;
@@ -133,7 +122,6 @@ a {
     box-sizing: border-box;
 }
 
-/* скругления выпадающего списка */
 .catalog-new-item {
     border-radius: 5px 5px 0 0;
 }
@@ -147,7 +135,6 @@ a {
     position: relative;
 }
 
-/* Подчёркивание в Новинках (выпадающий список) */
 .catalog-list-see .catalog-new-item::before {
     position: absolute;
     content: "";
@@ -158,23 +145,20 @@ a {
     bottom: 0;
 }
 
-/* Визуализация ссылок в раскрывающемся списке */
 .catalog-list-see a:hover {
     background: #fbded7;
     color: black
 }
 
-.catalog-list-see a:active{
+.catalog-list-see a:active {
     background: #f6b5a5;
     color: black
 }
-
 
 .main-navigation {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
 
 .site-navigation {
@@ -212,7 +196,6 @@ header {
 
 .site-navigation-search {
     margin-top: 1px;
-
 }
 
 .site-navigation-search a {
@@ -224,10 +207,12 @@ header {
 .site-navigation-search a {
     position: relative;
 }
+
 .site-navigation-search a:hover {
     background-color: white;
     position: relative;
 }
+
 .site-navigation-search a::before {
     content: "";
     position: absolute;
@@ -251,10 +236,44 @@ header {
     height: 17px;
 }
 
+.site-navigation-search {
+    position: relative;
+}
 
+.site-navigation-search:hover .search-form {
+    display: block;
+    position: absolute;
+    background-color: #f8f7f4;
+    right: 8px;
+    top: 36px;
+    border-radius: 7px;
+    width: 341px;
+    min-height: 84px;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
 
-/* ВХОД */
-.site-navigation-input a {
+.search-form input[type="text"] {
+    margin-right: 19px;
+    border: 1px solid #d3d3d2;
+    border-radius: 5px;
+    height: 42px;
+    width: 309px;
+    margin-top: 20px;
+    padding-left: 13px;
+    box-sizing: border-box;
+}
+
+/* .feedback .input[type="submit"]:active, .feedback .input[type="submit"]:hover, .feedback .input[type="submit"]:focus {
+    outline: none;
+  }   почему-то не работает*/
+
+/* .input:active, input:hover, input:focus {
+        outline: none;
+      }   */
+      /* КАК СДЕЛАТЬ БОРДЕР У INPUT??????????*/ 
+
+ /* ВХОД */
+.site-navigation-input .input-link {
     padding: 8px 17px 8px 45px;
     background: #9db1a5;
     margin-left: 10px;
@@ -262,20 +281,87 @@ header {
     border-radius: 16.5px;
 }
 
-.site-navigation-input a:hover {
-    padding: 8px 17px 8px 45px;
+.site-navigation-input .input-link:hover {
     background: white;
     color: black;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-radius: 16.5px;
 }
 
-.inputLink {
+.site-navigation-input {
     position: relative;
 }
 
-.inputLink::before {
+.site-navigation-input:hover .login-form {
+    display: block;
+    position: absolute;
+    background-color: #f8f7f4;
+    right: 8px;
+    top: 28px;
+    border-radius: 7px;
+    width: 277px;
+    min-height: 214px;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+
+}
+
+.login-form input[type="email"] {
+    margin-right: 19px;
+    border: 1px solid #d3d3d2;
+    border-radius: 5px;
+    height: 42px;
+    width: 239px;
+    margin-top: 20px;
+    padding-left: 13px;
+    box-sizing: border-box;
+}
+
+.login-form input[type="password"] {
+    margin-right: 19px;
+    border: 1px solid #d3d3d2;
+    border-radius: 5px;
+    height: 42px;
+    width: 239px;
+    margin-top: 20px;
+    padding-left: 13px;
+    box-sizing: border-box;
+}
+
+.login-form {
+    position: relative;
+}
+
+.login-form input[type="submit"] {
+    position: absolute;
+    top: 148px;
+    left: 18px;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 11px 25px 11px 25px;
+    background: linear-gradient(to top, #e74a35, #f26843);
+    border-radius: 32px;
+    box-shadow: 0px 2px 2px rgba(172, 16, 0, .64);
+}
+
+.login-form p {
+    text-align: left;
+    color: #323232;
+    margin-top: 24px;
+}
+
+.login-form a {
+    display: inline-block;
+    color: #323232;
+    margin-left: 139px;
+    margin-bottom: 7px;
+    border-bottom: 1px solid #323232;
+}
+
+.input-link {
+    position: relative;
+}
+
+.input-link::before {
     content: "";
     position: absolute;
     background-image: url(../img/header/entrance-white.svg);
@@ -287,7 +373,7 @@ header {
     height: 19px;
 }
 
-.inputLink:hover::before {
+.input-link:hover::before {
     content: "";
     position: absolute;
     background-image: url(../img/header/entrance-black.svg);
@@ -298,11 +384,6 @@ header {
     width: 21px;
     height: 19px;
 }
-
-
-
-
-
 
 /* КОРЗИНА */
 .site-navigation-basket,
@@ -324,8 +405,6 @@ header {
     color: black;
     border-radius: 16.5px;
 }
-
-
 
 .site-navigation-basket a::before {
     content: "";
@@ -351,8 +430,37 @@ header {
     height: 20px;
 }
 
-.scroll-bar {
+.site-navigation-basket {
+    position: relative;
+}
 
+.site-navigation-basket:hover .basket {
+    display: block;
+    position: absolute;
+    background-color: #f8f7f4;
+    right: 0px;
+    top: 28px;
+    border-radius: 7px;
+    width: 539px;
+    min-height: 214px;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.basket li {
+    text-align: left;
+    margin: 20px;
+    list-style: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.basket hr {
+    margin: 20px;
+}
+
+.scroll-bar {
     background-image: url("../img/header/iceCream1.png"), url("../img/header/iceCream2.png"), url("../img/header/light.png");
     background-repeat: no-repeat;
     background-position: top 83px left 277px, top 126px right 276px, top center;
@@ -382,11 +490,10 @@ header {
     background: linear-gradient(to bottom, #f58669, #ec6f5e);
 }
 
-.main-button:active{
+.main-button:active {
     background: linear-gradient(to bottom, #d74632, #e1613e);
     box-shadow: inset 1px 2px 1px 0px rgba(149, 39, 24, 0.5);
 }
-
 
 .menu-slide {
     text-align: center;
@@ -419,10 +526,7 @@ header {
     margin: 0 6px 0 6px;
 }
 
-
-
 /* КОНТЕНТ ПОСЛЕ КНОПКИ И СЛАЙДЕРА */
-
 .main-store-promotions {
     margin: 0 27px;
     display: flex;
@@ -482,6 +586,7 @@ header {
     background: linear-gradient(to bottom, #d74632, #e1613e);
     box-shadow: inset 1px 2px 1px 0px rgba(149, 39, 24, 0.5);
 }
+
 /* Список-примеры мороженного */
 .main-ice-cream-galery {
     margin-top: 40px;
@@ -502,7 +607,6 @@ header {
     margin-left: 13px;
     margin-right: 26px;
 }
-
 
 .catalog-ice-cream li {
     position: relative;
@@ -536,7 +640,6 @@ header {
 }
 
 /* Описание магазина в вафле */
-
 .main-about-shop {
     min-height: 306px;
     background-image: url(../img/main/aboutShop/fonAboutShop.jpg);
@@ -598,9 +701,6 @@ header {
     margin-right: 26px;
 }
 
-
-
-
 main .news-and-feedback {
     display: flex;
     flex-direction: row;
@@ -626,7 +726,6 @@ main .news-and-feedback {
     margin-top: 22px;
     margin-left: 19px;
 }
-
 
 .news-in-blog div {
     color: black;
@@ -658,7 +757,6 @@ main .news-and-feedback {
     я не хотел делать 2 фона. Хотелось попробовать поиграть с border-image */
 }
 
-
 .contacts {
     position: relative;
 }
@@ -687,7 +785,7 @@ main .news-and-feedback {
     letter-spacing: 100%;
 }
 
-input[type="email"] {
+.feedback input[type="email"] {
     margin-left: 21px;
     border: 1px solid #d3d3d2;
     border-radius: 5px;
@@ -703,7 +801,7 @@ input[placeholder] {
     line-height: 24px;
 }
 
-input[type="submit"] {
+.feedback input[type="submit"] {
     margin-left: 8px;
     color: white;
     border: none;
@@ -780,32 +878,32 @@ input[type="submit"] {
     top: 15px;
 }
 
-.made-a-company{
-display: inline-block;
-font-size: 12px;
-line-height: 18px;
-font-weight: 400;
-margin-top: 58px;
-margin-left: 231px;
+.made-a-company {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-top: 58px;
+    margin-left: 231px;
 }
 
-.contacts-and-time-work p{
+.contacts-and-time-work p {
     font-size: 14px;
     line-height: 20px;
 }
 
-.contacts-and-time-work p span{
+.contacts-and-time-work p span {
     font-size: 18px;
     line-height: 24px;
     font-weight: bold;
 }
 
-.contact-street{
+.contact-street {
     display: inline-block;
     margin-top: 1px;
 }
 
-.contact-phone{
+.contact-phone {
     display: inline-block;
     margin-top: 5px;
 }
