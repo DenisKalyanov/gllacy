@@ -263,15 +263,6 @@ header {
     box-sizing: border-box;
 }
 
-/* .feedback .input[type="submit"]:active, .feedback .input[type="submit"]:hover, .feedback .input[type="submit"]:focus {
-    outline: none;
-  }   почему-то не работает*/
-
-/* .input:active, input:hover, input:focus {
-        outline: none;
-      }   */
-      /* КАК СДЕЛАТЬ БОРДЕР У INPUT??????????*/ 
-
  /* ВХОД */
 .site-navigation-input .input-link {
     padding: 8px 17px 8px 45px;
