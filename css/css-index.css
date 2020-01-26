@@ -78,7 +78,7 @@ a {
 .site-navigation .link-site-navigation:hover {
     margin: 0;
     padding: 7px 13px 7px 15px;
-    background: white;
+    background-color: white;
     color: black;
     border-radius: 16px;
 }
@@ -86,7 +86,7 @@ a {
 .site-navigation .link-site-navigation:active {
     margin: 0;
     padding: 7px 13px 7px 15px;
-    background: white;
+    background-color: white;
     color: black;
     box-shadow: inset 1px 2px 1px 0px rgba(0, 0, 0, 0.5);
     border-radius: 16px;
@@ -114,7 +114,7 @@ a {
     color: black;
     font-size: 14px;
     font-weight: 400;
-    background: white;
+    background-color: white;
     padding: 8px;
     padding-left: 15px;
     margin: 0;
@@ -140,18 +140,18 @@ a {
     content: "";
     height: 1px;
     width: 128px;
-    background: #d1d0ce;
+    background-color: #d1d0ce;
     left: 7px;
     bottom: 0;
 }
 
 .catalog-list-see a:hover {
-    background: #fbded7;
+    background-color: #fbded7;
     color: black
 }
 
 .catalog-list-see a:active {
-    background: #f6b5a5;
+    background-color: #f6b5a5;
     color: black
 }
 
@@ -200,7 +200,7 @@ header {
 
 .site-navigation-search a {
     padding: 0px 16.5px 16.5px 16.5px;
-    background: #9db1a5;
+    background-color: #9db1a5;
     border-radius: 16.5px;
 }
 
@@ -266,14 +266,14 @@ header {
  /* ВХОД */
 .site-navigation-input .input-link {
     padding: 8px 17px 8px 45px;
-    background: #9db1a5;
+    background-color: #9db1a5;
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 16.5px;
 }
 
 .site-navigation-input .input-link:hover {
-    background: white;
+    background-color: white;
     color: black;
 }
 
@@ -385,14 +385,14 @@ header {
 .site-navigation-basket a {
     position: relative;
     padding: 8px 34px 8px 45px;
-    background: #9db1a5;
+    background-color: #9db1a5;
     border-radius: 16.5px;
 }
 
 .site-navigation-basket a:hover {
     position: relative;
     padding: 8px 34px 8px 45px;
-    background: white;
+    background-color: white;
     color: black;
     border-radius: 16.5px;
 }
@@ -503,14 +503,14 @@ header {
 .scroll-menu button {
     width: 21px;
     height: 21px;
-    background: transparent;
+    background-color: transparent;
     border: 1px solid white;
     border-radius: 50%;
 
 }
 
 .scroll-menu .button-for-slide1 {
-    background: white;
+    background-color: white;
 }
 
 .button-for-slide2 {
@@ -626,7 +626,7 @@ header {
 }
 
 .catalog-ice-cream li:hover {
-    background: #9db1a5;
+    background-color: #9db1a5;
     border-radius: 5px;
 }
 
@@ -755,7 +755,7 @@ main .news-and-feedback {
 .contacts-and-time-work {
     box-sizing: border-box;
     position: absolute;
-    background: #fff;
+    background-color: #fff;
     opacity: 98%;
     border-radius: 13px;
     color: black;
@@ -770,10 +770,9 @@ main .news-and-feedback {
 .about-email-field {
 
     margin: 29px 21px 16px 21px;
-    font-size: 16;
+    font-size: 16px;
     font-weight: 400;
     line-height: 22px;
-    letter-spacing: 100%;
 }
 
 .feedback input[type="email"] {
