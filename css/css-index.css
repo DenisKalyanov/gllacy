@@ -12,17 +12,8 @@ body {
   color: #fff;
 }
 
-.visually-hidden:not(:focus):not(:active) {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.visually-hidden {
+display: none;
 }
 
 a {
@@ -886,7 +877,7 @@ input[placeholder] {
   margin-top: 5px;
 }
 
-iframe{
+iframe {
   width: 100%;
   height: 430px;
   border: 0;
