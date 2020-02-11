@@ -8,47 +8,74 @@
     <meta name="keywords"
         content="мороженое, доставка мороженого, магазин мороженного, мороженое онлайн, сливочное мороженое">
     <title>Gllacy Shop page2</title>
-    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/css-catalog.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Сайт мороженого</h1>
-        <section>
-            <h2>Навигация по сайту</h2>
-            <figure><img src="img/header/Logo.png" alt="Gllacy Shop"></figure>
-            <nav>
-                <ul>
-                    <li><a href="#">Каталог</a></li>
-                    <li><a href="#">Доставка и оплата</a></li>
-                    <li><a href="#">О компании</a></li>
+    <header class="main-header">
+        <h1 class="visually-hidden">Сайт мороженого Gllacy Shop</h1>
+        <nav class="main-navigation" aria-label="Навигация по сайту">
+            <img class="logo-in-header" src="img/header/logo.svg" alt="Логотип Gllacy Shop">
+            <div class="all-navigation">
+                <ul class="site-navigation">
+                    <li class="catalog-in-nav"><a href="#" class="link-site-navigation">Каталог</a>
+                        <ul class="catalog-list">
+                            <li class="catalog-list-see"><a class="catalog-new-item" href="#">Новинки</a></li>
+                            <li class="catalog-list-see"><a href="#">Сливочное</a></li>
+                            <li class="catalog-list-see"><a href="#">Щербеты</a></li>
+                            <li class="catalog-list-see"><a href="#">Фруктовый лёд</a></li>
+                            <li class="catalog-list-see"><a href="#">Мелорин</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="pink-link-color">Доставка и оплата</a></li>
+                    <li><a href="#" class="pink-link-color">О Компании</a></li>
                 </ul>
-                <ul>
-                    <li><a href="#">Поиск</a></li>
-                    <li><a href="#">Вход</a></li>
-                    <li><a href="#">2 товара</a></li>
+                <ul class="user-navigation">
+                    <li class="site-navigation-search"><a href="#" aria-label="Поиск"></a>
+                        <form action="#" class="search-form visually-hidden">
+                            <input type="text" placeholder="Что ищем?">
+                        </form>
+                    </li>
+                    <li class="site-navigation-input"><a class="input-link" href="#">Вход</a>
+                        <form action="#" class="login-form visually-hidden">
+                            <input type="email" required placeholder="Электронная почта">
+                            <input type="password" required placeholder="Пароль">
+                            <input type="submit" value="Войти">
+                            <p>
+                                <a href="#" class="pink-link-color forgot-password">Забыли пароль?</a>
+                                <a href="#" class="pink-link-color registration-new-user">Новая регистрация</a>
+                            </p>
+                        </form>
+                    </li>
+                    <li class="site-navigation-basket"><a href="#">2 товара</a>
+                        <ul class="basket visually-hidden">
+                            <li>
+                                Корзина пуста :(
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
+            </div>
+        </nav>
+        <div class="navigation-page-and-contacts">
+            <nav class="navigation-page">
+                <a href="#" class="pink-link-color navigation-page-main">Главная</a>»
+                <a href="#" class="pink-link-color navigation-page-catalog">Каталог</a>»
+                <a href="#" class="navigation-page-catalog">Сливочное</a>
             </nav>
 
-            <p>С 10 до 20, ежедневно <br>
-                <span>8 812 450-25-25</span>
-            </p>
-        </section>
+            <div>
+                <p class="header-work-time">С 10 до 20, ежедневно</p>
+                <span class="header-work-phone"> 8 812 450-25-25</span>
+            </div>
+        </div>
     </header>
-    <!-- НАЧАЛО MAIN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
     <main>
-        <!-- навигация по сайту-->
-        <nav>
-            <a href="#">Главная</a>
-            <a href="#">Каталог</a>
-            <a href="#">Сливочное</a>
-        </nav>
-        <!-- навигация по сайту-->
         <section>
-            <h2>Сливочное мороженое</h2>
+            <h2 class="ice-cream-section">Сливочное мороженое</h2>
             <form>
-                <p><label>Сортировка<br>
+                <p><label>Сортировка:<br>
                         <select>
                             <option value="popular">по популярности</option>
                             <option value="cheap">сначала недорогие</option>
@@ -56,28 +83,23 @@
                             <option value="fatty">по жирности</option>
                         </select>
                     </label></p>
-
                 <p><label>Цена: 100 руб. - 500 руб.<br>
                         <input type="range" min="100" max="500" step="2" value="50"></label><br></p>
-
                 <p><label>Жирность<br></label>
                     <input type="radio" name="fatty" value="0%">0%
                     <input type="radio" name="fatty" value="до 10%" checked>до 10%
                     <input type="radio" name="fatty" value="до 30%">до 30%
                     <input type="radio" name="fatty" value="выше 30%">выше 30%
                 </p>
-
                 Наполнители: <br>
                 <label>шоколадные <input type="checkbox" name="filler" checked></label>
                 <label>сахарные присыпки<input type="checkbox" name="filler" checked> </label>
                 <label>фрукты<input type="checkbox" name="filler"> </label>
                 <label>сиропы<input type="checkbox" name="filler"> </label>
                 <label>джемы<input type="checkbox" name="filler"> </label>
-
                 <input type="submit" value="Применить">
             </form>
         </section>
-
         <section>
             <h2>Меню</h2>
             <ol>
@@ -136,43 +158,43 @@
                     <p>Сливочное с мятным сиропом</p>
                 </li>
             </ol>
-            <button>1</button>
+            <button class="">1</button>
             <button>2</button>
             <button>3</button>
             <button>4</button>
             <button>5</button>
             <button><img src="#" alt="next"></button>
-
-
         </section>
-
     </main>
-    <!-- КОНЕЦ MAIN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
-    <footer>
-        <p>
-            <img src="#" alt="twitter">
-            <img src="#" alt="instagram">
-            <img src="#" alt="facebook">
-            <img src="#" alt="vkontakte">
-        </p>
+    <footer class="main-footer">
         <nav>
-            <ul>
-                <li><a href="">Для поставщиков</a></li>
-                <li><a href="">О производстве</a></li>
+            <ul class="social-button-list">
+                <li> <a class="social-button" href="https://twitter.com/"><img src="./img/footer/twitter.svg"
+                            alt="twitter" aria-label="Твиттер"></a></li>
+                <li> <a class="social-button" href="https://www.instagram.com/"><img src="./img/footer/instagram.svg"
+                            alt="instagram" aria-label="Инстаграмм"></a></li>
+                <li> <a class="social-button" href="https://www.facebook.com/"><img src="./img/footer/facebook.svg"
+                            alt="facebook" aria-label="Фэйсбук"></a></li>
+                <li> <a class="social-button" href="https://vk.com/"><img src="./img/footer/vk.svg" alt="vkontakte"
+                            aria-label="Вконтакте"></a></li>
             </ul>
-            <ul>
-                <li><a href="">Наши документы</a></li>
-                <li><a href="">Экологические стандарты</a></li>
+        </nav>
+        <nav class="about-company">
+            <ul class="about-company-list-one">
+                <li><a href="#" class="pink-link-color">Для поставщиков</a></li>
+                <li><a href="#" class="pink-link-color">О производстве</a></li>
+            </ul>
+            <ul class="about-company-list-two">
+                <li><a href="#" class="pink-link-color">Наши документы</a></li>
+                <li><a href="#" class="pink-link-color">Экологические стандарты</a></li>
             </ul>
         </nav>
         <p>
-            <img src="img/footer/logo-htmlacademy-small.png" alt="HTMLacademy">
+            <img class="logo-in-footer" src="./img/footer/logo-htmlacademy.svg.png" alt="Логотип Gllacy Shop">
         </p>
-        <p>Сделано в <a href="#">HTML Academy</a>&#169; 2017</p>
-
+        <p class="made-a-company">Сделано по <a href="https://vk.com/denis_kalyanov" class="pink-link-color">HTML
+                Academy</a> &#169; 2020</p>
     </footer>
-
-
 </body>
 
 </html>

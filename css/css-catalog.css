@@ -7,10 +7,15 @@
 
 body {
   background-color: #849d8f;
+  background-image: url(/img/header/light-green-header.png);
+  background-repeat: repeat-x;
+  background-size: 655px;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #fff;
+  width: 1146px;
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -51,13 +56,8 @@ a {
   display: flex;
 }
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
 .logo-in-header {
-  margin: 8px 9px 0 27px;
+  margin: 8px 9px 0 0;
 }
 
 .catalog-in-nav {
@@ -166,24 +166,23 @@ a {
 }
 
 .user-navigation {
-  margin: 23px 27px 16px 0;
+  margin: 23px 0px 16px 0;
 }
 
 .main-header {
   text-align: right;
+  margin-bottom: 10px;
 }
 
 .header-work-time {
   font-size: 14px;
   font-weight: bold;
-  margin-right: 27px;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
 }
 
 .header-work-phone {
   font-size: 22px;
   font-weight: bold;
-  margin-right: 27px;
 }
 
 .site-navigation-search {
@@ -435,352 +434,63 @@ a {
   font-weight: bold;
   line-height: 30px;
 }
-
-.basket hr {
-  margin: 20px;
-}
-
-.scroll-bar {
-  background-image: url("../img/header/iceCream1.png"),
-    url("../img/header/iceCream2.png"), url("../img/header/light.png");
-  background-repeat: no-repeat;
-  background-position: top 83px left 277px, top 126px right 276px, top center;
-}
-
-.text-cream-and-jem {
-  font-size: 60px;
-  font-weight: 700;
-  line-height: 60px;
-  display: block;
-  margin-top: 274px;
-  margin-bottom: 43px;
-}
-
-.main-button {
-  font-size: 32px;
-  font-weight: bold;
-  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76),
-    0 0 5px rgba(61, 61, 46, 0.34);
-  padding: 13px 42px 13px 41px;
-  background: linear-gradient(to top, #e74a35, #f26843);
-  border-radius: 32px;
-  box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
-}
-
-.main-button:hover {
-  background: linear-gradient(to bottom, #f58669, #ec6f5e);
-}
-
-.main-button:active {
-  background: linear-gradient(to bottom, #d74632, #e1613e);
-  box-shadow: inset 1px 2px 1px 0px rgba(149, 39, 24, 0.5);
-}
-
-.menu-slide {
-  text-align: center;
-}
-
-.scroll-menu {
-  position: relative;
-}
-
-.buttoms-for-scroll {
-  position: absolute;
-  left: 27px;
-  top: 165px;
-}
-
-.scroll-menu button {
-  width: 21px;
-  height: 21px;
-  background-color: transparent;
-  border: 1px solid #fff;
-  border-radius: 50%;
-}
-
-.scroll-menu .button-for-slide1 {
-  background-color: #fff;
-}
-
-.button-for-slide2 {
-  margin: 0 6px;
-}
-
-.main-store-promotions {
-  margin: 55px 27px 0 27px;
+.navigation-page-and-contacts {
   display: flex;
   justify-content: space-between;
-  font-weight: 700;
 }
 
-.main-promotions-one {
-  min-height: 229px;
-  width: 560px;
-  background-image: url("../img/main/action/maline.png");
-  background-repeat: no-repeat;
+.navigation-page {
+  align-self: flex-end;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 4px;
 }
 
-.main-promotions-two {
-  min-height: 229px;
-  width: 560px;
-  background-image: url("../img/main/action/chocolate.png");
-  background-repeat: no-repeat;
+.navigation-page-main {
+  margin-right: 7px;
 }
 
-.main-store-promotions {
-  text-align: right;
+.navigation-page-catalog {
+  margin: 0 5px;
 }
 
-.main-store-promotions h3 {
-  margin-top: 18px;
-  margin-left: 20px;
+.ice-cream-section {
   font-size: 35px;
-  text-align: left;
-}
-
-.main-store-promotions p {
-  margin: 17px 20px 57px 20px;
-  font-size: 18px;
-  text-align: left;
-}
-
-.main-store-promotions a {
-  margin-right: 23px;
-  padding: 13px 22px;
-  font-size: 18px;
-  background: linear-gradient(to top, #e74a35, #f26843);
-  border-radius: 32px;
-  box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
-}
-
-.main-store-promotions a:hover {
-  background: linear-gradient(to bottom, #f58669, #ec6f5e);
-}
-
-.main-store-promotions a:active {
-  background: linear-gradient(to bottom, #d74632, #e1613e);
-  box-shadow: inset 1px 2px 1px 0px rgba(149, 39, 24, 0.5);
-}
-
-.main-ice-cream-galery {
-  margin-top: 40px;
-}
-
-.catalog-ice-cream {
-  display: flex;
-  margin: 0 27px;
-  justify-content: space-between;
-}
-
-.main-catalog-item2 {
-  margin-left: 26px;
-  margin-right: 13px;
-}
-
-.main-catalog-item3 {
-  margin-left: 13px;
-  margin-right: 26px;
-}
-
-.catalog-ice-cream li {
-  position: relative;
-  text-align: center;
-  font-weight: 500;
-}
-
-.image-hit {
-  position: absolute;
-}
-
-.main-cost-ice-cream {
-  position: absolute;
-  top: 209px;
-  font-size: 45px;
-  font-weight: bold;
-}
-
-.main-cost-ice-cream span {
-  font-size: 30px;
-}
-
-.main-about-ice-cream {
-  padding-top: 11px;
-  line-height: 22px;
-}
-
-.catalog-ice-cream li:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
-}
-
-.main-about-shop {
-  min-height: 306px;
-  background-image: url("../img/main/aboutShop/fonAboutShop.jpg");
-  color: #323232;
-  border-radius: 13px;
-  margin: 36px 27px 0 27px;
-}
-
-.main-about-shop h3 {
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 30px;
-  margin-left: 21px;
-  padding-top: 27px;
-  padding-bottom: 9px;
-}
-
-.main-about-shop-facts {
-  display: flex;
-  font-weight: 400;
-  line-height: 22px;
-}
-
-.main-about-shop-facts-make {
-  background-image: url("../img/main/aboutShop/ice-cream.svg");
-  background-repeat: no-repeat;
-  padding: 12px 0 0 57px;
-}
-
-.main-about-shop-facts-components {
-  background-image: url("../img/main/aboutShop/eco.svg");
-  background-repeat: no-repeat;
-  padding: 12px 0 0 57px;
-  margin-top: 6px;
-}
-
-.main-about-shop-facts-cooperation {
-  background-image: url("../img/main/aboutShop/cow.svg");
-  background-repeat: no-repeat;
-  padding: 12px 0 0 57px;
-}
-
-.main-about-shop-facts-logistics {
-  background-image: url("../img/main/aboutShop/thermometer.svg");
-  background-repeat: no-repeat;
-  padding: 11px 0 0 57px;
-  margin-top: 8px;
-}
-
-.main-about-shop-facts .first-column {
-  width: 50%;
-  margin-left: 20px;
-  margin-right: 26px;
-}
-
-.main-about-shop-facts .second-column {
-  width: 50%;
-  margin-right: 20px;
-  margin-right: 26px;
-}
-
-main .news-and-feedback {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 40px;
-}
-
-.news-in-blog {
-  min-height: 220px;
-  width: 560px;
-  margin: 0px 26px 40px 27px;
-  background-image: url("../img/main/article/fonStrawberry.jpg");
-  border-radius: 15px;
-  color: #000;
-}
-
-.news-in-blog h3 {
-  margin-top: 22px;
-  margin-left: 19px;
-  font-weight: 500;
-  line-height: 22px;
-  font-size: 16px;
-}
-
-.news-in-blog div {
-  width: 285px;
-  margin-left: 19px;
-  margin-top: 4px;
-  color: #000;
   font-weight: 700;
-  line-height: 30px;
-  font-size: 24px;
+}
+form {
+  display: flex;
 }
 
-.news-in-blog div a {
-  color: #000;
-  text-decoration: underline;
-}
-
-.feedback {
-  width: 550px;
-  margin-right: 27px;
-  height: 210px;
-  background-color: #f8f7f4;
-  border: 5px solid transparent;
-  border-image-source: url("../img/main/article/bg-post.svg");
-  border-image-slice: 5;
-  border-radius: 15px;
-  border-image-repeat: round;
-  color: #5a5a5a;
-}
-
-.contacts {
-  position: relative;
-}
-
-.contacts-and-time-work {
-  min-height: 305px;
-  width: 302px;
-  box-sizing: border-box;
-  position: absolute;
-  background-color: #fff;
-  opacity: 98%;
-  border-radius: 13px;
-  color: #000;
-  right: 27px;
-  top: 62px;
-  padding-left: 25px;
-  padding-top: 28px;
-}
-
-.about-email-field {
-  display: block;
-  margin: 29px 21px 16px 21px;
+select {
+  height: 36px;
+  width: 193px;
+  background-color: #a9bab0;
+  color: white;
+  border-radius: 18px;
+  outline: none;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
-}
-
-.feedback input[type="email"] {
-  height: 42px;
-  width: 353px;
-  margin-left: 21px;
-  border: 1px solid #d3d3d2;
-  border-radius: 5px;
-  margin-top: 1px;
-  padding-left: 13px;
-}
-
-input[placeholder] {
-  color: #999999;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.feedback input[type="submit"] {
-  margin-left: 8px;
-  color: #fff;
+  font-weight: 500;
+  padding-left: 16px;
   border: none;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 11px 19px 12px 18px;
-  background: linear-gradient(to top, #e74a35, #f26843);
-  border-radius: 32px;
-  box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  background-image: url("../img/main/form/icon-down-dir.png");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
 }
 
+select:hover {
+  color: #323232;
+  background-image: url("../img/main/form/icon-down-dir-black.png");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+}
+
+/* FOOTER */
 .main-footer {
   display: flex;
   min-height: 103px;
@@ -793,7 +503,6 @@ input[placeholder] {
 
 .social-button-list {
   margin-top: 33px;
-  margin-left: 27px;
 }
 
 .social-button-list li {
@@ -842,7 +551,7 @@ input[placeholder] {
 
 .logo-in-footer {
   position: absolute;
-  right: 134px;
+  right: 107px;
   top: 15px;
 }
 
@@ -851,32 +560,6 @@ input[placeholder] {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
-  margin: 58px 27px 0 204px;
-}
-
-.contacts-and-time-work p {
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.contacts-and-time-work p span {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: bold;
-}
-
-.contact-street {
-  display: inline-block;
-  margin-top: 1px;
-}
-
-.contact-phone {
-  display: inline-block;
-  margin-top: 5px;
-}
-
-iframe {
-  width: 100%;
-  height: 430px;
-  border: 0;
+  margin-top: 58px;
+  margin-left: 204px;
 }
