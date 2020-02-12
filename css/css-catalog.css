@@ -28,7 +28,7 @@ a {
 }
 
 .pink-link-color {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .pink-link-color:hover,
@@ -62,7 +62,7 @@ a {
 
 .catalog-in-nav {
   position: relative;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .site-navigation a {
@@ -70,7 +70,7 @@ a {
 }
 
 .link-site-navigation {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .site-navigation .link-site-navigation:hover {
@@ -458,9 +458,28 @@ a {
   font-size: 35px;
   font-weight: 700;
 }
-form {
+
+.product-selection {
   display: flex;
+  flex-direction: column;
+  margin-top: 20px;
 }
+
+.product-selection-part-one{
+display: flex;
+flex-direction: row;
+}
+
+.input-fatty{
+  padding:20px;
+  background-color: red;
+}
+
+.product-selection-part-two{
+  display: flex;
+  flex-direction: row;
+  }
+
 
 select {
   height: 36px;
@@ -477,10 +496,10 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  position: relative;
   background-image: url("../img/main/form/icon-down-dir.png");
   background-repeat: no-repeat;
   background-position: right 15px center;
+  cursor: pointer;
 }
 
 select:hover {
@@ -488,6 +507,142 @@ select:hover {
   background-image: url("../img/main/form/icon-down-dir-black.png");
   background-repeat: no-repeat;
   background-position: right 15px center;
+  cursor: pointer;
+}
+
+select:focus {
+  color: #323232;
+  background-image: url("../img/main/form/icon-down-dir-black.png");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-color: white;
+  cursor: pointer;
+}
+
+label[for="sort"] {
+  display: block;
+  margin-left: 16px;
+  padding-bottom: 6px;
+}
+
+.list-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+
+
+.list-items li {
+  width: 267px;
+  margin-bottom: 40px;
+  text-align: center;
+  position: relative;
+  margin-top: 6px;
+  box-sizing: border-box;
+}
+
+.list-items div{
+  position: relative;
+  padding-top: 6px;
+}
+.main-cost-ice-cream {
+  top: 209px;
+  position: absolute;
+  font-size: 45px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+.list-items li div:hover {
+  margin-top: 0px;
+  position: absolute;
+  left: -13px;
+  padding: 6px 13px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  min-height: 300px;
+  z-index: 1;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.main-cost-ice-cream span {
+  font-size: 30px;
+}
+
+.main-about-ice-cream {
+  padding-top: 11px;
+  line-height: 22px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.main-about-ice-cream span {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.list-items li div:hover .fast-seen-button {
+  display: inline;
+}
+.fast-seen-button {
+  margin-top: 19px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76),
+    0 0 5px rgba(61, 61, 46, 0.34);
+  padding: 13px 42px 13px 41px;
+  background: linear-gradient(to top, #e74a35, #f26843);
+  border-radius: 32px;
+  box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
+  border: none;
+  margin-bottom: 20px;
+}
+
+.fast-seen-button:hover {
+  background: linear-gradient(to bottom, #f58669, #ec6f5e);
+}
+
+.fast-seen-button:active {
+  background: linear-gradient(to bottom, #d74632, #e1613e);
+  box-shadow: inset 1px 2px 1px 0px rgba(149, 39, 24, 0.5);
+}
+
+.fast-seen-button:focus {
+  outline: none;
+}
+
+
+
+.paging{
+  text-align: right;
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+hr{
+  border: 1px solid rgba(225, 225, 225, 0.5);
+}
+.paging button{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  width: 26px;
+  height: 26px;
+}
+
+.paging .number-page:hover{
+background-color: rgba(225, 225, 225, 0.5);
+width: 26px;
+height: 26px;
+font-size: 16px;
+font-weight: 700;
+border-radius: 50%;
 }
 
 /* FOOTER */
