@@ -323,6 +323,61 @@ a {
   box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
 }
 
+input[type="checkbox"]{
+  display: none;
+}
+
+input[type="checkbox"] + label:before {
+  background-image: url(/img/form/checkbox-off.png);
+  background-repeat: no-repeat;
+  border-radius: 3px;
+  content: "";
+  color: transparent;
+  display: inline-block;
+
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 22px;
+  margin: 0px 5px 0 0;
+  height: 20px;
+  width: 23px;
+  text-align: right;
+  vertical-align: middle;
+  transition: color ease 0.3s;
+}
+
+input[type="checkbox"]:checked + label:before {
+  background-image: url(/img/form/checkbox-on.png);
+  color: #fff;
+  border-color: #fff;
+  border-radius: 3px;
+}
+
+.product-selection-part-two button {
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 7px 25px 7px 25px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 32px;
+  outline: none;
+  border: 1px solid #fff;
+  margin-left: 14px;
+}
+
+.product-selection-part-two button:hover {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 8px 26px 8px 26px;
+}
+
+.product-selection-part-two button:active {
+  background-color: #fff;
+  box-shadow: inset 1px 2px 1px 0px rgba(106, 107, 106, 0.5);
+}
+
 .login-form p {
   text-align: left;
   color: #323232;
@@ -465,21 +520,20 @@ a {
   margin-top: 20px;
 }
 
-.product-selection-part-one{
-display: flex;
-flex-direction: row;
+.product-selection-part-one {
+  display: flex;
+  flex-direction: row;
 }
 
-.input-fatty{
-  padding:20px;
+.input-fatty {
+  padding: 20px;
   background-color: red;
 }
 
-.product-selection-part-two{
+.product-selection-part-two {
   display: flex;
   flex-direction: row;
-  }
-
+}
 
 select {
   height: 36px;
@@ -532,6 +586,11 @@ label[for="sort"] {
   list-style: none;
 }
 
+.checkbox-list {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 6px 16px 0px 16px;
+  border-radius: 32px;
+}
 
 .list-items li {
   width: 267px;
@@ -542,7 +601,7 @@ label[for="sort"] {
   box-sizing: border-box;
 }
 
-.list-items div{
+.list-items div {
   position: relative;
   padding-top: 6px;
 }
@@ -553,9 +612,6 @@ label[for="sort"] {
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
-
-
-
 
 .list-items li div:hover {
   margin-top: 0px;
@@ -615,18 +671,16 @@ label[for="sort"] {
   outline: none;
 }
 
-
-
-.paging{
+.paging {
   text-align: right;
   margin-top: 35px;
   margin-bottom: 30px;
 }
 
-hr{
+hr {
   border: 1px solid rgba(225, 225, 225, 0.5);
 }
-.paging button{
+.paging button {
   background-color: transparent;
   outline: none;
   border: none;
@@ -634,15 +688,25 @@ hr{
   cursor: pointer;
   width: 26px;
   height: 26px;
+  font-weight: 700;
 }
 
-.paging .number-page:hover{
-background-color: rgba(225, 225, 225, 0.5);
-width: 26px;
-height: 26px;
-font-size: 16px;
-font-weight: 700;
-border-radius: 50%;
+.paging .number-page:hover {
+  background-color: rgba(225, 225, 225, 0.5);
+  width: 26px;
+  height: 26px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 50%;
+}
+
+.number-page.page-one {
+  background-color: #fff;
+  border-radius: 50%;
+  color: #000;
+}
+.number-page.page-one:hover {
+  color: #fff;
 }
 
 /* FOOTER */
