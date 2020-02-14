@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords"
         content="мороженое, доставка мороженого, магазин мороженного, мороженое онлайн, сливочное мороженое">
-    <title>Gllacy Shop page2</title>
+    <title>Gllacy Shop Catalog</title>
     <link rel="stylesheet" href="css/css-catalog.css">
 </head>
 
@@ -22,7 +22,7 @@
                     <li class="catalog-in-nav"><a href="#" class="link-site-navigation">Каталог</a>
                         <ul class="catalog-list">
                             <li class="catalog-list-see"><a class="catalog-new-item" href="#">Новинки</a></li>
-                            <li class="catalog-list-see"><a href="#">Сливочное</a></li>
+                            <li class="catalog-list-see"><a href="#" class="page-presence">Сливочное</a></li>
                             <li class="catalog-list-see"><a href="#">Щербеты</a></li>
                             <li class="catalog-list-see"><a href="#">Фруктовый лёд</a></li>
                             <li class="catalog-list-see"><a href="#">Мелорин</a></li>
@@ -49,18 +49,33 @@
                         </form>
                     </li>
                     <li class="site-navigation-basket"><a href="#">2 товара</a>
-                        <ul class="basket visually-hidden">
-                            <li>
-                                Корзина пуста :(
-                            </li>
-                        </ul>
-                    </li>
+                        <div class="basket visually-hidden">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>&#10005;</td>
+                                        <td><img src="/img/header/basket/slot1.png" alt=""></td>
+                                        <td>Пломбир с апельсиновым джемом</td>
+                                        <td>1,5 кг х <span>200 руб.</span></td>
+                                        <td>300 руб.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&#10005;</td>
+                                        <td><img src="/img/header/basket/slot2.png" alt=""></td>
+                                        <td>Клубничный пломбир с присыпкой <br>
+                                            из белого шоколада</td>
+                                        <td>1,5 кг х <span>300 руб.</span></td>
+                                        <td>450 руб.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                 </ul>
             </div>
         </nav>
         <div class="navigation-page-and-contacts">
             <nav class="navigation-page">
-                <a href="#" class="pink-link-color navigation-page-main">Главная</a>»
+                <a href="/gllacy-index.html" class="pink-link-color navigation-page-main">Главная</a>»
                 <a href="#" class="pink-link-color navigation-page-catalog">Каталог</a>»
                 <a href="#" class="navigation-page-catalog">Сливочное</a>
             </nav>
@@ -84,17 +99,28 @@
                             <option value="fatty">по жирности</option>
                         </select>
                     </p>
-                    <p><label>Цена: 100 руб. - 500 руб.</label><br>
-                        <input type="range" min="100" max="500" step="2" value="50" class="slider" id="myRange"></p>
-                    <p>
-                        <label>Жирность<br></label>
-                        <input type="radio" name="fatty" value="0%">0%
-                        <input type="radio" name="fatty" value="до 10%" checked>до 10%
-                        <input type="radio" name="fatty" value="до 30%">до 30%
-                        <input type="radio" name="fatty" value="выше 30%">выше 30%
-                    </p>
+                    <div class="cost-choice-section">
+                        <p class="label-cost">
+                            <label>Цена: 100 руб. - 500 руб.</label><br></p>
+                        <div class="range-selector">
+                            <input type="range" min="100" max="500" step="2" value="150" class="slider" id="myRange">
+                        </div>
+                    </div>
+
+                    <div class="fatty-section">
+                        <p class="fat-content">Жирность:</p>
+                        <div>
+                            <input type="radio" name="fatty" value="0%" id="fatty1"><label for="fatty1"> 0%</label>
+                            <input type="radio" name="fatty" value="до 10%" checked id="fatty2"><label for="fatty2">до
+                                10%</label>
+                            <input type="radio" name="fatty" value="до 30%" id="fatty3"><label for="fatty3">до
+                                30%</label>
+                            <input type="radio" name="fatty" value="выше 30%" id="fatty4"><label for="fatty4">выше
+                                30%</label>
+                        </div>
+                    </div>
                 </div>
-                <label>Наполнители:</label> 
+                <label class="filler-section">Наполнители:</label>
                 <div class="product-selection-part-two">
                     <p class="checkbox-list">
                         <input type="checkbox" name="filler" id="chocolate" checked><label
@@ -104,7 +130,7 @@
                         <input type="checkbox" name="filler" id="fruits"><label for="fruits">фрукты</label>
                         <input type="checkbox" name="filler" id="syrup"><label for="syrup">сиропы</label>
                         <input type="checkbox" name="filler" id="jem"><label for="jem">джемы</label>
-                    </p> 
+                    </p>
                     <button type="submit" value="">Применить</button>
                 </div>
             </form>

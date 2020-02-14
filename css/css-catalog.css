@@ -16,6 +16,7 @@ body {
   color: #fff;
   width: 1146px;
   margin: 0 auto;
+  letter-spacing: 0.1px;
 }
 
 .visually-hidden {
@@ -66,11 +67,14 @@ a {
 }
 
 .site-navigation a {
-  margin: 70px 13px 7px 15px;
+  margin: 70px 13px 7px 14px;
 }
 
-.link-site-navigation {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+.site-navigation .link-site-navigation {
+  margin: 0;
+  padding: 7px 13px 7px 14px;
+  background-color: rgb(208, 112, 88);
+  border-radius: 16px;
 }
 
 .site-navigation .link-site-navigation:hover {
@@ -82,14 +86,11 @@ a {
 }
 
 .site-navigation .link-site-navigation:active {
-  margin: 0;
-  padding: 7px 13px 7px 15px;
-  background-color: #fff;
-  color: #000;
   box-shadow: inset 1px 2px 1px 0px rgba(0, 0, 0, 0.5);
-  border-radius: 16px;
 }
-
+.catalog-list-see .page-presence {
+  background-color: rgb(208, 112, 88);
+}
 .catalog-list {
   display: none;
   position: absolute;
@@ -323,27 +324,39 @@ a {
   box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
 }
 
-input[type="checkbox"]{
+input[type="checkbox"],
+input[type="radio"] {
   display: none;
 }
 
+.range-selector {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5px 21px 9px 21px;
+  border-radius: 32px;
+}
+.cost-choice-section {
+  margin: 0 15px;
+}
+
+input[type="range"] {
+  width: 176px;
+}
 input[type="checkbox"] + label:before {
   background-image: url(/img/form/checkbox-off.png);
   background-repeat: no-repeat;
   border-radius: 3px;
   content: "";
-  color: transparent;
   display: inline-block;
-
-  font-size: 20px;
-  font-weight: 900;
-  line-height: 22px;
-  margin: 0px 5px 0 0;
+  margin: 0px 7px 0 18px;
   height: 20px;
   width: 23px;
-  text-align: right;
   vertical-align: middle;
   transition: color ease 0.3s;
+  opacity: 0.8;
+}
+
+input[type="checkbox"]:first-child + label:before {
+  margin-left: 0px;
 }
 
 input[type="checkbox"]:checked + label:before {
@@ -353,16 +366,100 @@ input[type="checkbox"]:checked + label:before {
   border-radius: 3px;
 }
 
+.label-cost {
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 16px;
+  padding-bottom: 3px;
+}
+.fat-content {
+  margin-left: 16px;
+  padding-bottom: 3px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.fatty-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.fatty-section div {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 6px 16px 6px 16px;
+  border-radius: 32px;
+}
+
+input[type="radio"] + label:before {
+  background-image: url(/img/form/radio-off.png);
+  background-repeat: no-repeat;
+  content: "";
+  display: inline-block;
+  margin: 0px 7px 0 15px;
+  height: 22px;
+  width: 22px;
+  vertical-align: middle;
+  transition: color ease 0.3s;
+  opacity: 0.8;
+}
+
+input[type="radio"]:first-child + label:before {
+  margin-left: 0px;
+}
+
+input[type="radio"]:checked + label:before {
+  background-image: url(/img/form/radio-on.png);
+  color: #fff;
+  border-color: #fff;
+  border-radius: 3px;
+}
+
+input[type="checkbox"]:hover + label:before,
+input[type="radio"]:hover + label:before {
+  opacity: 1;
+}
+
+input[type="radio"] + label {
+  font-weight: 500;
+}
+
+.filler-section {
+  margin: 12px 0 3px 16px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+}
+input[type="range"] {
+  -webkit-appearance: none;
+  border-radius: 2px;
+  height: 5px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-image: url("../img/form/filter-button.png");
+}
+
 .product-selection-part-two button {
   color: #fff;
   border: none;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 7px 25px 7px 25px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  padding: 7px 28px 7px 29px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 32px;
   outline: none;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   margin-left: 14px;
 }
 
@@ -370,7 +467,7 @@ input[type="checkbox"]:checked + label:before {
   background-color: #fff;
   color: #000;
   border: none;
-  padding: 8px 26px 8px 26px;
+  padding: 9px 27px 9px 27px;
 }
 
 .product-selection-part-two button:active {
@@ -427,17 +524,15 @@ input[type="checkbox"]:checked + label:before {
 
 .site-navigation-basket a {
   position: relative;
-  padding: 8px 34px 8px 45px;
-  background-color: rgba(255, 255, 255, 0.2);
+  padding: 8px 15px 8px 45px;
+  background-color: #fff;
+  color: #000;
   border-radius: 16px;
 }
 
 .site-navigation-basket a:hover {
-  position: relative;
-  padding: 8px 34px 8px 45px;
   background-color: #fff;
   color: #000;
-  border-radius: 16px;
 }
 
 .site-navigation-basket a::before {
@@ -445,19 +540,7 @@ input[type="checkbox"]:checked + label:before {
   position: absolute;
   width: 21px;
   height: 20px;
-  background-image: url("../img/header/basket-white.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  left: 16px;
-  top: 6px;
-}
-
-.site-navigation-basket a:hover::before {
-  content: "";
-  position: absolute;
-  width: 21px;
-  height: 20px;
-  background-image: url("../img/header/basket-black.svg");
+  background-image: url("../img/header/basket-full.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   left: 16px;
@@ -478,16 +561,25 @@ input[type="checkbox"]:checked + label:before {
   top: 28px;
   border-radius: 7px;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+  z-index: 2;
 }
 
-.basket li {
+.basket td {
+  color: #323232;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
   text-align: left;
-  margin: 20px;
-  list-style: none;
-  color: #000;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 30px;
+  padding: 10px;
+}
+
+.basket span{
+  color: #999;
+}
+
+table{
+  border-bottom: 1px solid #cacac7;
+  margin: 0 20px;
 }
 .navigation-page-and-contacts {
   display: flex;
@@ -523,6 +615,7 @@ input[type="checkbox"]:checked + label:before {
 .product-selection-part-one {
   display: flex;
   flex-direction: row;
+  margin-top: 14px;
 }
 
 .input-fatty {
@@ -539,7 +632,7 @@ select {
   height: 36px;
   width: 193px;
   background-color: #a9bab0;
-  color: white;
+  color: #fff;
   border-radius: 18px;
   outline: none;
   font-family: "Roboto", Arial, sans-serif;
@@ -569,14 +662,16 @@ select:focus {
   background-image: url("../img/main/form/icon-down-dir-black.png");
   background-repeat: no-repeat;
   background-position: right 15px center;
-  background-color: white;
+  background-color: #fff;
   cursor: pointer;
 }
 
 label[for="sort"] {
+  font-size: 14px;
+  font-weight: 500;
   display: block;
   margin-left: 16px;
-  padding-bottom: 6px;
+  padding-bottom: 3px;
 }
 
 .list-items {
@@ -584,17 +679,22 @@ label[for="sort"] {
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
+  margin-top: 28px;
 }
 
+.list-items img {
+  margin-bottom: 8px;
+}
 .checkbox-list {
   background-color: rgba(255, 255, 255, 0.2);
-  padding: 6px 16px 0px 16px;
+  padding: 5px 19px 0px 19px;
   border-radius: 32px;
+  font-weight: 500;
 }
 
 .list-items li {
   width: 267px;
-  margin-bottom: 40px;
+  margin-bottom: 26px;
   text-align: center;
   position: relative;
   margin-top: 6px;
@@ -606,7 +706,7 @@ label[for="sort"] {
   padding-top: 6px;
 }
 .main-cost-ice-cream {
-  top: 209px;
+  top: 228px;
   position: absolute;
   font-size: 45px;
   font-weight: bold;
@@ -630,7 +730,6 @@ label[for="sort"] {
 }
 
 .main-about-ice-cream {
-  padding-top: 11px;
   line-height: 22px;
   text-align: center;
   font-weight: 500;
@@ -673,7 +772,7 @@ label[for="sort"] {
 
 .paging {
   text-align: right;
-  margin-top: 35px;
+  margin-top: 52px;
   margin-bottom: 30px;
 }
 
@@ -686,17 +785,15 @@ hr {
   border: none;
   color: #fff;
   cursor: pointer;
-  width: 26px;
-  height: 26px;
+  width: 24px;
+  height: 24px;
+  font-size: 16px;
+  line-height: 18px;
   font-weight: 700;
 }
 
 .paging .number-page:hover {
   background-color: rgba(225, 225, 225, 0.5);
-  width: 26px;
-  height: 26px;
-  font-size: 16px;
-  font-weight: 700;
   border-radius: 50%;
 }
 
@@ -709,7 +806,6 @@ hr {
   color: #fff;
 }
 
-/* FOOTER */
 .main-footer {
   display: flex;
   min-height: 103px;
@@ -740,10 +836,6 @@ hr {
   list-style: none;
 }
 
-.about-company ul li {
-  margin-bottom: 7px;
-}
-
 .about-company-list-one {
   margin-right: 32px;
 }
@@ -770,8 +862,8 @@ hr {
 
 .logo-in-footer {
   position: absolute;
-  right: 107px;
-  top: 15px;
+  right: 80px;
+  top: 20px;
 }
 
 .made-a-company {
@@ -779,6 +871,7 @@ hr {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
-  margin-top: 58px;
-  margin-left: 204px;
+  margin-top: 62px;
+  margin-left: 220px;
+  letter-spacing: 0px;
 }

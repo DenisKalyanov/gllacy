@@ -11,6 +11,7 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #fff;
+  letter-spacing: 0.1px;
 }
 
 .visually-hidden {
@@ -23,7 +24,7 @@ a {
 }
 
 .pink-link-color {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .pink-link-color:hover,
@@ -62,15 +63,15 @@ a {
 
 .catalog-in-nav {
   position: relative;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .site-navigation a {
-  margin: 70px 13px 7px 15px;
+  margin: 70px 13px 7px 14px;
 }
 
 .link-site-navigation {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .site-navigation .link-site-navigation:hover {
@@ -177,7 +178,7 @@ a {
   font-size: 14px;
   font-weight: bold;
   margin-right: 27px;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
 }
 
 .header-work-phone {
@@ -497,6 +498,15 @@ a {
   background-color: transparent;
   border: 1px solid #fff;
   border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+
+.scroll-menu button:hover:not(:first-child) {
+  border: 2px solid #fff;
+  width: 21px;
+  height: 21px;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .scroll-menu .button-for-slide1 {
